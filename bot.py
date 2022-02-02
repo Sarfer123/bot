@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("5270779486:AAHq3drBpKCFpfeo4t7MQPzYiMxX1inRND0")
+bot = telebot.("5270779486:AAEfImfy5f1UhuEcvLDta5QEZsycsJlQO)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -52,12 +52,14 @@ def bot_message(message):
 
 		elif message.text == '🏅Персональная тренировка':
 			bot.send_message(message.chat.id, """🎯 Персональная тренировка в зале - 1 час
+
 ✅Стоимость:
+
 1 тренировка 3000₽
 10 тренировок 25000₽""")
 
 		elif message.text == '🖥Онлайн-ведение':
-			bot.send_message(message.chat.id, """🎯 Онлайн ведение
+			bot.send_message(message.chat.id, """🎯 Онлайн-ведение
 
 ✅Стоимость: 10000₽ в месяц
 
