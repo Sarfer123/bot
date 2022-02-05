@@ -36,7 +36,8 @@ def bot_message(message):
 			bot.send_message(message.from_user.id, '✅Консультации' , reply_markup = markup)
 		
 		elif message.text == '🚀 Обо мне':
-			bot.send_message(message.chat.id, """Привет👋 Меня зовут Алекс.
+			bot.send_message(message.chat.id, """Привет👋 
+Меня зовут Алекс.
 Я выступающий спортсмен NPC в категории men's physique & classic physique.
 Дипломированный специалист в области фитнеса.""")
 
